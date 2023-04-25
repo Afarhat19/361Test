@@ -1,0 +1,37 @@
+
+<style>
+    .test {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .main {
+      text-align: center;
+    }
+  
+    .anothertest {
+      display: flex;
+      flex-direction: column;
+    }
+    
+  </style>
+  <div class="test">
+    <div class="main">
+      <div class="anothertest">
+  
+  
+        <h1>Please enter a username!</h1>
+        <mat-form-field class="example-full-width">
+          <input matInput [(ngModel)]= "username" name="username">
+        </mat-form-field>
+        <a (click)="saveusernameandgotonextpage()" type="submit" mat-raised-button>Submit</a>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+  
